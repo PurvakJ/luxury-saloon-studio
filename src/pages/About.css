@@ -1,0 +1,223 @@
+/* pages/About.css */
+.about-hero {
+  padding: 180px 0 100px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('https://kosa.bold-themes.com/classy/wp-content/uploads/sites/2/2021/10/hero_about.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 60px;
+  font-weight: 300;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.about-hero h2 {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.about-hero p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #ccc;
+  font-size: 16px;
+}
+
+.counters-section {
+  padding: 60px 0;
+  background: #000;
+  color: #fff;
+}
+
+.counters-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+
+.counter-item .counter-icon {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.counter-item .counter-value {
+  font-size: 36px;
+  font-weight: 700;
+  display: block;
+  color: var(--accent-color);
+}
+
+.counter-item .counter-label {
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #888;
+}
+
+.team-section {
+  padding: 80px 0;
+  background: #000;
+  color: #fff;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.team-card {
+  text-align: center;
+}
+
+.team-card img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.team-card h4 {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.team-card p {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.team-card .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.team-card .social-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.team-card .social-links a:hover {
+  color: var(--accent-color);
+}
+
+.about-hours {
+  padding: 80px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url('https://kosa.bold-themes.com/classy/wp-content/uploads/sites/2/2021/10/background_about.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.about-hours .hours-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-hours .hours-left h3 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: var(--accent-color);
+  margin-bottom: 5px;
+}
+
+.about-hours .hours-left h2 {
+  font-size: 32px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.about-hours .hours-left p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.about-hours .hours-right .hour-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+}
+
+.about-hours .hours-right .hour-item:last-child {
+  border-bottom: none;
+}
+
+.about-hours .hours-right .hour-item.current {
+  color: var(--accent-color);
+}
+
+.join-section {
+  padding: 80px 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('https://kosa.bold-themes.com/classy/wp-content/uploads/sites/2/2021/10/background_about_02.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+
+.join-section h3 {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: var(--accent-color);
+  margin-bottom: 5px;
+}
+
+.join-section h2 {
+  font-size: 32px;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.join-section p {
+  color: #ccc;
+  max-width: 300px;
+  margin: 0 auto 30px;
+}
+
+@media (max-width: 992px) {
+  .counters-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .about-hours .hours-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .counters-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .about-hero h1 {
+    font-size: 36px;
+  }
+}

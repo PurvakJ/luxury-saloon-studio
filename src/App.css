@@ -1,38 +1,252 @@
-.App {
-  text-align: center;
+/* App.css */
+:root {
+  --accent-color: #d4a977;
+  --accent-color-dark: #c1843d;
+  --accent-color-very-dark: #744f25;
+  --accent-color-light: rgba(212, 169, 119, 0.7);
+  --alternate-color: #c7c8cc;
+  --body-font: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
+  --heading-font: "Libre Caslon Display", Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: var(--body-font);
+  color: #181818;
+  background: #fff;
+  line-height: 1.6;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bt-page-wrap {
+  overflow: hidden;
+}
+
+/* Header Styles */
+.bt-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: transparent;
+  padding: 20px 40px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.bt-header.scrolled {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 10px 40px;
+}
+
+.bt-header .logo img {
+  height: 60px;
+}
+
+.bt-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.bt-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.bt-nav a:hover {
+  color: var(--accent-color);
+}
+
+.bt-nav .book-now {
+  background: var(--accent-color);
+  color: #000;
+  padding: 10px 25px;
+  border-radius: 4px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bt-nav .book-now:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Dropdown styles */
+.bt-dropdown {
+  position: relative;
+}
+
+.bt-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #1a1a1a;
+  min-width: 200px;
+  padding: 15px 0;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.bt-dropdown:hover .bt-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.bt-dropdown-menu a {
+  display: block;
+  padding: 8px 20px;
+  color: #ccc;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.bt-dropdown-menu a:hover {
+  color: var(--accent-color);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Footer Styles */
+.bt-footer {
+  background: #000;
+  color: #fff;
+  padding: 60px 40px 30px;
+}
+
+.bt-footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.bt-footer .logo img {
+  height: 40px;
+}
+
+.bt-footer h5 {
+  font-size: 13px;
+  font-weight: 400;
+  color: #878787;
+  margin-bottom: 15px;
+}
+
+.bt-footer .newsletter-form {
+  display: flex;
+  border-bottom: 1px solid #333;
+}
+
+.bt-footer .newsletter-form input {
+  background: transparent;
+  border: none;
+  padding: 10px 0;
+  color: #fff;
+  flex: 1;
+  outline: none;
+  font-size: 14px;
+}
+
+.bt-footer .newsletter-form button {
+  background: transparent;
+  border: none;
+  color: var(--accent-color);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 0 10px 15px;
+}
+
+.bt-footer-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.bt-footer-links ul {
+  list-style: none;
+}
+
+.bt-footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.bt-footer-links ul li a {
+  color: #878787;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.bt-footer-links ul li a:hover {
+  color: #fff;
+}
+
+.bt-footer .social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.bt-footer .social-icons a {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  transition: all 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.bt-footer .social-icons a:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.bt-footer-bottom {
+  border-top: 1px solid #1a1a1a;
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+  color: #878787;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .bt-header {
+    padding: 15px 20px;
   }
-  to {
-    transform: rotate(360deg);
+  .bt-nav {
+    display: none;
+  }
+  .bt-footer-content {
+    grid-template-columns: 1fr;
+  }
+  .bt-footer-links {
+    grid-template-columns: 1fr;
   }
 }

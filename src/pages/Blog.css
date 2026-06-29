@@ -1,0 +1,273 @@
+/* pages/Blog.css */
+.blog-hero {
+  padding: 180px 0 100px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('https://kosa.bold-themes.com/classy/wp-content/uploads/sites/2/2018/09/featured_image_blog.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+
+.blog-hero h1 {
+  font-size: 60px;
+  font-weight: 300;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.blog-hero h2 {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+
+.blog-content {
+  padding: 80px 0;
+  background: #f9f9f9;
+}
+
+.blog-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+}
+
+.blog-post {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.blog-post .post-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.blog-post .post-content {
+  padding: 30px;
+}
+
+.blog-post .post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.blog-post .post-meta .category {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.blog-post .post-meta span:not(:last-child)::after {
+  content: '•';
+  margin-left: 15px;
+  color: #ddd;
+}
+
+.blog-post h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.blog-post h2 a {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.blog-post h2 a:hover {
+  color: var(--accent-color);
+}
+
+.blog-post p {
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.blog-post .read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.blog-post .read-more:hover {
+  color: var(--accent-color);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.pagination button {
+  background: none;
+  border: none;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.pagination button:hover {
+  background: var(--accent-color);
+  color: #000;
+}
+
+.pagination span {
+  color: #888;
+  font-size: 14px;
+}
+
+/* Sidebar */
+.blog-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.sidebar-widget {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-widget h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.search-widget {
+  display: flex;
+  padding: 0;
+  overflow: hidden;
+}
+
+.search-widget input {
+  flex: 1;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-widget button {
+  padding: 15px 20px;
+  background: var(--accent-color);
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s ease;
+}
+
+.search-widget button:hover {
+  background: var(--accent-color-dark);
+}
+
+.recent-posts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.recent-posts ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.recent-posts ul li:last-child {
+  border-bottom: none;
+}
+
+.recent-post {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.recent-post img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.recent-post-info a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.recent-post-info a:hover {
+  color: var(--accent-color);
+}
+
+.categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+.categories ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.categories ul li:last-child {
+  border-bottom: none;
+}
+
+.categories ul li a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories ul li a:hover {
+  color: var(--accent-color);
+}
+
+@media (max-width: 992px) {
+  .blog-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-hero h1 {
+    font-size: 36px;
+  }
+  
+  .blog-post .post-meta {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .blog-post .post-meta span:not(:last-child)::after {
+    display: none;
+  }
+  
+  .sidebar-widget {
+    padding: 20px;
+  }
+}
