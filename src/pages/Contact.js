@@ -15,7 +15,7 @@ function Contact() {
       <section className="contact-hero">
         <div className="container">
           <h1>CONTACT US</h1>
-          <h2>KOSA SALON</h2>
+          <h2>LUXURY SALOON STUDIO</h2>
         </div>
       </section>
 
@@ -70,7 +70,7 @@ function Contact() {
           <div className="contact-details">
             <div className="detail-item">
               <h3>GET IN TOUCH</h3>
-              <p className="email">info@kosa.com</p>
+              <p className="email">info@LUXURY SALOON STUDIO.com</p>
               <p>New customer for color? You want a big color change, or looking for advice? Please book a free consultation first or give us a call to make an appointment.</p>
             </div>
             <div className="detail-item locations">
@@ -93,7 +93,7 @@ function Contact() {
       <section className="gift-section">
         <div className="container">
           <div className="gift-content">
-            <h3>KOSA SALON</h3>
+            <h3>LUXURY SALOON STUDIO</h3>
             <h2>GIFT VOUCHER</h2>
             <p>Available for all occasions, for a specific treatment or monetary amount. Please call us or email us for more details.</p>
             <a href="/contact" className="btn-primary">📞 +32 (0)3 232 45 12</a>

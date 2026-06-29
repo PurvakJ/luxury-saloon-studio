@@ -88,7 +88,7 @@ function Services() {
       <section className="services-hero">
         <div className="container">
           <h1>SERVICES</h1>
-          <h2>KOSA SALON</h2>
+          <h2>LUXURY SALOON STUDIO</h2>
           <p>Designed to maintain your current colour, blend out a growing root or balance your blonde while providing full and demi-permanent coverage.</p>
         </div>
       </section>

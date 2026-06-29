@@ -18,7 +18,7 @@ function Header() {
       <div className="logo">
         <Link to="/">
           <img 
-            src="https://kosa.bold-themes.com/classy/wp-content/uploads/sites/2/2019/02/logo_white.png" 
+            src="https://res.cloudinary.com/dm9gg8yss/image/upload/v1782751314/634d62a1-4e0d-4759-b6fb-fa7dbfc779e9_q8n3cv.png" 
             alt="Classy" 
           />
         </Link>

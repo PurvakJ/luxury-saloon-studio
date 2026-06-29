@@ -131,7 +131,7 @@ function Blog() {
       <section className="blog-hero">
         <div className="container">
           <h1>OUR BLOG</h1>
-          <h2>KOSA SALON</h2>
+          <h2>LUXURY SALOON STUDIO</h2>
         </div>
       </section>
 

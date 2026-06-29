@@ -9,12 +9,12 @@ function Footer() {
         <div>
           <div className="logo">
             <img 
-              src="https://kosa.bold-themes.com/classy/wp-content/uploads/sites/2/2021/09/logo_footer.png" 
+              src="https://res.cloudinary.com/dm9gg8yss/image/upload/v1782751314/634d62a1-4e0d-4759-b6fb-fa7dbfc779e9_q8n3cv.png" 
               alt="Classy" 
             />
           </div>
           <p style={{ color: '#878787', marginTop: '20px', fontSize: '13px' }}>
-            All rights reserved Kosa Hair Care 2021.
+            All rights reserved LUXURY SALOON STUDIO Hair Care 2021.
           </p>
         </div>
         <div>
@@ -45,7 +45,7 @@ function Footer() {
         </div>
       </div>
       <div className="bt-footer-bottom">
-        All rights reserved Kosa Hair Care 2021.
+        All rights reserved LUXURY SALOON STUDIO Hair Care 2021.
       </div>
     </footer>
   );

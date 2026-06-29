@@ -49,15 +49,15 @@ function Home() {
   ];
 
   const gallery = [
-    'home_02_image_01.avif',
-    'home_02_image_02.avif',
-    'home_02_image_03.avif',
-    'home_02_image_04.avif',
-    'home_02_image_05.avif',
-    'home_02_image_06.avif',
-    'home_02_image_07.avif',
-    'home_02_image_08.avif',
-    'home_02_image_09.avif'
+    'https://kosa.bold-themes.com/classy/wp-content/uploads/sites/2/2025/06/home_02_image_01.avif',
+    'https://kosa.bold-themes.com/classy/wp-content/uploads/sites/2/2025/06/home_02_image_02.avif',
+    'https://kosa.bold-themes.com/classy/wp-content/uploads/sites/2/2025/06/home_02_image_03.avif',
+    'https://kosa.bold-themes.com/classy/wp-content/uploads/sites/2/2025/06/home_02_image_04.avif',
+    'https://res.cloudinary.com/dm9gg8yss/image/upload/v1782751314/634d62a1-4e0d-4759-b6fb-fa7dbfc779e9_q8n3cv.png',
+    'https://kosa.bold-themes.com/classy/wp-content/uploads/sites/2/2025/06/home_02_image_06.avif',
+    'https://kosa.bold-themes.com/classy/wp-content/uploads/sites/2/2025/06/home_02_image_07.avif',
+    'https://kosa.bold-themes.com/classy/wp-content/uploads/sites/2/2025/06/home_02_image_08.avif',
+    'https://kosa.bold-themes.com/classy/wp-content/uploads/sites/2/2025/06/home_02_image_09.avif'
   ];
 
   const workingHours = [
@@ -173,7 +173,7 @@ function Home() {
             {gallery.map((img, index) => (
               <div key={index} className="gallery-item">
                 <img 
-                  src={`https://kosa.bold-themes.com/classy/wp-content/uploads/sites/2/2025/06/${img}`}
+                  src={`${img}`}
                   alt={`Gallery ${index + 1}`}
                 />
                 <div className="gallery-overlay">

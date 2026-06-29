@@ -40,7 +40,7 @@ function About() {
       <section className="about-hero">
         <div className="container">
           <h1>ABOUT US</h1>
-          <h2>KOSA SALON</h2>
+          <h2>LUXURY SALOON STUDIO</h2>
           <p>Designed to maintain your current colour, blend out a growing root or balance your blonde while providing full and demi-permanent coverage.</p>
         </div>
       </section>
